@@ -42,7 +42,7 @@ public class HumanResoucesApp {
 				showEmployees(lBas, lDevelopers, lTesters, dev, tester, ba);
 				break;
 			default:
-				System.out.println("Hãy nhập lại số 1/2/3/4.");
+				System.out.println("Thoát chương trình. Chọn 1/2/3/4 để sử dụng các chức năng");
 				break;
 			}
 		} while (count1 == 1 || count1 == 2 || count1 == 3 || count1 == 4);
