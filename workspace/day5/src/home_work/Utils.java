@@ -13,7 +13,6 @@ public class Utils {
 	public static boolean getYesNoInput(Scanner scanner, String prompt) {
 		System.out.print(prompt);
 		String response = scanner.nextLine().trim().toLowerCase();
-		return response.equals("có") || response.equals("yes") || response.equals("y") || response.equals("Y")
-				|| response.equals("YES");
+		return response.equals("có") || response.equals("yes") || response.equals("y") || response.equals("Y");
 	}
 }
