@@ -30,16 +30,16 @@ public class HumanResoucesApp {
 			count1 = Integer.parseInt(select);
 			switch (count1) {
 			case 1:
-				dev.inputDeveloper(lDevelopers);
+				Repository.inputDeveloper(lDevelopers);
 				break;
 			case 2:
-				tester.inputTester(lTesters);
+				Repository.inputTester(lTesters);
 				break;
 			case 3:
-				ba.inputBA(lBas);
+				Repository.inputBA(lBas);
 				break;
 			case 4:
-				showEmployees(lBas, lDevelopers, lTesters, dev, tester, ba);
+				Repository.showEmployees(lBas, lDevelopers, lTesters, dev, tester, ba);
 				break;
 			default:
 				System.out.println("Thoát chương trình. Chọn 1/2/3/4 để sử dụng các chức năng");
@@ -47,12 +47,6 @@ public class HumanResoucesApp {
 			}
 		} while (count1 == 1 || count1 == 2 || count1 == 3 || count1 == 4);
 
-	}
-
-	private static void showEmployees(List<BA> lBas, List<Developer> lDevelopers, List<Tester> lTesters, Developer dev, Tester tester, BA ba) {
-		dev.showDeveloper(lDevelopers);
-		tester.showTester(lTesters);
-		ba.showBAs(lBas);
 	}
 
 }
