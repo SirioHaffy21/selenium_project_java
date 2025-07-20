@@ -15,7 +15,6 @@ public class HumanResoucesApp {
 		Developer dev = new Developer();
 		Tester tester = new Tester();
 		BA ba = new BA();
-		String select = "";
 		int count1 = 0;
 		System.out.println("-----------------------------------");
 		System.out.println("Menu hệ thống nhập dữ liệu danh sách nhân viên công ty.");
@@ -26,8 +25,7 @@ public class HumanResoucesApp {
 		System.out.println("Các số khác. Thoát chương trình.");
 		do {
 			System.out.print("Chọn chức năng: ");
-			select = scanner.nextLine();
-			count1 = Integer.parseInt(select);
+			count1 = Integer.parseInt(scanner.nextLine());
 			switch (count1) {
 			case 1:
 				Repository.inputDeveloper(lDevelopers);
